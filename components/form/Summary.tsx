@@ -1,5 +1,6 @@
-// components/form/Summary.tsx
-import { useFormContext } from 'react-hook-form';
+'use client';
+
+import { useFormContext } from 'react-hook-form'; 
 
 export function Summary() {
   const { watch } = useFormContext();

@@ -25,17 +25,14 @@ export default function SummaryPage() {
           <AvatarFallback>din</AvatarFallback>
         </Avatar>
 
-        {/* Heading with the First Name */}
         <h1 className="text-3xl font-bold mb-2 text-center">
           Congratulations, {formData.firstName}!
         </h1>
 
-        {/* Subheading */}
         <p className="text-gray-500 mb-8 text-center">
           Your application details are summarized below.
         </p>
 
-        {/* Summary of the inputs */}
         <div className="w-full max-w-md text-left space-y-2">
           <p><strong>Email:</strong> {formData.email}</p>
           <p><strong>First Name:</strong> {formData.firstName}</p>
@@ -45,7 +42,7 @@ export default function SummaryPage() {
         </div>
 
         <p className="mt-4 text-center">
-          Your application has been submitted. We'll get back to you shortly.
+          Your application has been submitted. We&#39;ll get back to you shortly.
         </p>
       </div>
     </div>

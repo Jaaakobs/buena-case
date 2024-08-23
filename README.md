@@ -29,33 +29,41 @@ Make sure you have the following installed on your machine:
 ### Installation
 
 1. **Clone the repository:**
-```bash
-git clone https://github.com/jaaakobs/buena-case.git
-cd buena-case
+    ```bash
+    git clone https://github.com/jaaakobs/buena-case.git
+    cd buena-case
+    ```
 
 2. **Install dependencies:**
-npm install
+    ```bash
+    npm install
+    ```
 
 ### Running the Project
-1.	Start the development server:
-npm run dev
 
-2.	Open the application in your browser:
-The application should now be running at http://localhost:3000.
+1. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
 
-Project Structure
+2. **Open the application in your browser:**
+   The application should now be running at [http://localhost:3000](http://localhost:3000).
 
-	•	/components: Contains all reusable components such as the form steps, buttons, header, etc.
-	•	/pages: Next.js pages including the application form steps and summary page.
-	•	/public: Public assets like images and videos.
-	•	/styles: Global CSS files and Tailwind configuration.
+## Project Structure
 
-Contributing
+- **/components**: Contains all reusable components such as the form steps, buttons, header, etc.
+- **/pages**: Next.js pages including the application form steps and summary page.
+- **/public**: Public assets like images and videos.
+- **/styles**: Global CSS files and Tailwind configuration.
+
+## Contributing
 
 Feel free to fork the repository and submit pull requests for any improvements or bug fixes.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
 
 That’s it! You’re now ready to start working on the Buena Apartment Finder project. If you encounter any issues, feel free to reach out or check the documentation of the respective technologies used.

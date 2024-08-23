@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { FormProvider, useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';  // Ensure this import is correct
 import { StepForm } from '@/components/form/StepForm';
 import { EmailStep } from '@/components/form/EmailStep';
 import { NameStep } from '@/components/form/NameStep';
