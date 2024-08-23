@@ -9,6 +9,7 @@ import { SalaryStep } from '@/components/form/SalaryStep';
 import { PhoneStep } from '@/components/form/PhoneStep';
 import { useEffect } from 'react';
 import { useFormContext } from '@/components/form/FormContext';
+import { AnimatePresence } from 'framer-motion';
 
 const stepComponents: { [key: number]: React.FC } = {
   1: EmailStep,
@@ -38,9 +39,11 @@ export default function StepPage() {
 
   return (
     <FormProvider {...methods}>
-      <StepForm step={step}>
-        {StepComponent && <StepComponent />}
-      </StepForm>
+      <AnimatePresence mode="wait" initial={false}>
+        <StepForm step={step}>
+          {StepComponent && <StepComponent />}
+        </StepForm>
+      </AnimatePresence>
     </FormProvider>
   );
 }

@@ -1,4 +1,3 @@
-// app/application/summary/page.tsx
 import { Summary } from '@/components/form/Summary';
 import { useForm } from 'react-hook-form';
 

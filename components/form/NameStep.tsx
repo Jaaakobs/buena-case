@@ -24,7 +24,7 @@ export function NameStep() {
           id="firstName" 
           placeholder="Enter your first name" 
           {...register('firstName', { required: 'First name is required' })}
-          className={errors.firstName ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}
+          className={`mb-4 ${errors.firstName ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}`}
         />
         {errors.firstName && (
           <p className="text-red-500 text-sm mt-1">

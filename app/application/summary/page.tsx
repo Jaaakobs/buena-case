@@ -19,9 +19,7 @@ export default function SummaryPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8">
-      {/* Adjusted margin to move content higher */}
       <div className="mt-[-10vh] flex flex-col items-center w-full max-w-lg">
-        {/* Avatar at the top */}
         <Avatar className="w-24 h-24 mb-4">
           <AvatarImage src="/images/din.jpeg" alt="User Avatar" />
           <AvatarFallback>din</AvatarFallback>
@@ -32,7 +30,7 @@ export default function SummaryPage() {
           Congratulations, {formData.firstName}!
         </h1>
 
-        {/* Subheading for consistency */}
+        {/* Subheading */}
         <p className="text-gray-500 mb-8 text-center">
           Your application details are summarized below.
         </p>
@@ -46,7 +44,6 @@ export default function SummaryPage() {
           <p><strong>Phone Number:</strong> {formData.phone}</p>
         </div>
 
-        {/* Final message */}
         <p className="mt-4 text-center">
           Your application has been submitted. We'll get back to you shortly.
         </p>

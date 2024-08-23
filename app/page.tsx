@@ -24,12 +24,12 @@ export default function HomePage() {
         </p>
         <div className="flex space-x-4">
           <Link href="/application/1" passHref>
-            <Button variant="default" className="px-6 py-3 text-lg">
+            <Button variant="default" className="px-6 py-3">
               Start Application
               <ChevronRightIcon className="ml-2 h-4 w-4" />
             </Button>
           </Link>
-          <Button variant="secondary" className="px-6 py-3 text-lg" onClick={scrollToHowItWorks}>
+          <Button variant="secondary" className="px-6 py-3" onClick={scrollToHowItWorks}>
             How it Works
           </Button>
         </div>
@@ -43,7 +43,6 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* Add some padding before the How it Works section */}
       <div className="pt-20 pb-20 w-full px-4" ref={howItWorksRef}>
         <h2 className="text-3xl font-semibold text-center mb-8 text-primary">How it Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -64,8 +63,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      {/* Add the Footer component */}
       <Footer />
     </div>
   );

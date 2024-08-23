@@ -33,7 +33,6 @@ export function EmailStep() {
           })}
           className={errors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}
         />
-        {/* Convert the error message to a string before rendering */}
         {errors.email && (
           <p className="text-red-500 text-sm mt-1">
             {errors.email.message?.toString()}

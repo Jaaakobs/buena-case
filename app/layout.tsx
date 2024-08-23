@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/ui/Header"; 
 import { FormProvider } from '@/components/form/FormContext';
-import { Toaster } from "@/components/ui/toaster"; // Import Toaster for toast notifications
+import { Toaster } from "@/components/ui/toaster"; 
+import { ThemeProvider } from "@/components/theme-provider"; // Import ThemeProvider for dark/light mode
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,15 +19,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <FormProvider> 
-          <Header /> 
-          <main className="pt-16"> 
-            {children}
-          </main>
-          <Toaster /> {/* Include the Toaster for displaying toast notifications */}
-        </FormProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <FormProvider> 
+            <Header /> 
+            <main className="pt-16"> 
+              {children}
+            </main>
+            <Toaster />
+          </FormProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -27,23 +27,23 @@ export function SalaryStep() {
         <div className="flex flex-col space-y-2">
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="0-1000" id="option-1" />
-            <Label htmlFor="option-1">0 - 1.000</Label>
+            <Label htmlFor="option-1">0 - 1.000 €</Label>
           </div>
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="1000-2000" id="option-2" />
-            <Label htmlFor="option-2">1.000 - 2.000</Label>
+            <Label htmlFor="option-2">1.000 - 2.000 €</Label>
           </div>
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="2000-3000" id="option-3" />
-            <Label htmlFor="option-3">2.000 - 3.000</Label>
+            <Label htmlFor="option-3">2.000 - 3.000 €</Label>
           </div>
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="3000-4000" id="option-4" />
-            <Label htmlFor="option-4">3.000 - 4.000</Label>
+            <Label htmlFor="option-4">3.000 - 4.000 €</Label>
           </div>
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="4000+" id="option-5" />
-            <Label htmlFor="option-5">More than 4.000</Label>
+            <Label htmlFor="option-5">More than 4.000 €</Label>
           </div>
         </div>
       </RadioGroup>
